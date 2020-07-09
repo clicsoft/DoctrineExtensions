@@ -26,11 +26,22 @@ a release.
 
 Changes below marked ⚠️ may also be breaking, if you have extended DoctrineExtensions.
 
-### MongoDB
-- Requires the `ext-mongodb` PHP extension. Usage of `ext-mongo` is deprecated and will be removed in the next major version.
-- Minimum Doctrine MongoDB ODM requirement of 2.0
-- Usages of `\MongoDate` replaced with `MongoDB\BSON\UTCDateTime`
+## [2.4.41] - 2020-05-10
+### Sluggable
+#### Fixed
+- Remove PHPDoc samples as they are interpreted by Annotation Reader (#2120)
 
+## [2.4.40] - 2020-04-27
+### SoftDeleteable
+#### Fixed
+- Invalidate query cache when toggling filter on/off for an entity (#2112)
+
+## [2.4.39] - 2020-01-18
+### Tree
+### Fixed
+- The value of path source property is cast to string type for Materialized Path Tree strategy (#2061)
+
+## [2.4.38] - 2019-11-08
 ### Global / Shared
 #### Fixed
 - Removed `null` parameter from `Doctrine\Common\Cache\Cache::save()` calls (#1996)
